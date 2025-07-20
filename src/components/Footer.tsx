@@ -33,7 +33,7 @@ export const Footer = () => {
                     <p className="text-sm mb-2">Get the latest updates and offers.</p>
                     <form className="flex flex-col space-y-2">
                         <input type="email" placeholder="Your email" className="px-3 py-2 rounded text-black"/>
-                        <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
+                        <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition duration-200 cursor-pointer">
                             Subscribe
                         </button>
                     </form>

@@ -14,7 +14,6 @@ export const usersApi = createApi({
         getUserById: builder.query<User | undefined, string>({
             query: () => "users.json", 
             transformResponse: (users: User[], _meta, userId: string): User | undefined => {
-                console.log("inside users api" +userId);
                 return users.find(user => user.userId === userId);
             }
         })

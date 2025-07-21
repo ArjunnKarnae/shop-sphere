@@ -11,8 +11,11 @@ export const ordersApi = createApi({
         getAllOrders: builder.query<Order[], void>({
             query: () => "orders.json"
         }),
-        getOrdersByUserId: builder.query<Order, number>({
-            query: (userId) => `orders/${userId}`
+        getOrdersByUserId: builder.query<Order[] | undefined, string>({
+            query: () => "orders.json",
+            transformResponse: (orders: Order[], _meta, userId:string): Order[] | undefined => {
+                return orders.filter(o => o.userId === userId);
+            }
         })
     })
 });

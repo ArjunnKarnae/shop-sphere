@@ -1,10 +1,10 @@
 import type { JSX } from "react";
-import { useGetAllOrdersQuery } from "../store/ordersApi";
+import { useGetOrdersByUserIdQuery } from "../store/ordersApi";
 import type { Order } from "../types/Order";
 
 
-export const OrderHistory = (): JSX.Element => {
-    const {data, isLoading, isError}: {data?: Order[], isLoading: boolean, isError: boolean} = useGetAllOrdersQuery();
+export const OrderHistory = ({userId}: {userId: string}): JSX.Element => {
+    const {data, isLoading, isError}: {data?: Order[], isLoading: boolean, isError: boolean} = useGetOrdersByUserIdQuery(userId);
 
     let content: JSX.Element| undefined = undefined;
 
@@ -17,18 +17,21 @@ export const OrderHistory = (): JSX.Element => {
     
     const ordersRenderedContent = data?.map((order: Order) => {
         let statusColor = "";
-        if(order.status === 'Shipped'){
+        if(order.status === 'Shipped') {
             statusColor = "bg-yellow-200"
-        }else if(order.status === 'Delivered'){
+        }else if(order.status === 'Delivered') {
             statusColor = "bg-green-200"
-        }else{
+        }else if(order.status === 'Cancelled') {
+            statusColor = "bg-red-200"
+        }
+        else{
             statusColor = "bg-blue-200"
         }
         return (
             <tr key={order.id}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{order.orderId}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{order.date.toString()}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{order.total}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${order.total}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm">
                     <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusColor}`}>{order.status}</span></td>
             </tr>

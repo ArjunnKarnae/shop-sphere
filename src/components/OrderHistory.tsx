@@ -17,16 +17,21 @@ export const OrderHistory = ({userId}: {userId: string}): JSX.Element => {
     
     const ordersRenderedContent = data?.map((order: Order) => {
         let statusColor = "";
-        if(order.status === 'Shipped') {
-            statusColor = "bg-yellow-200"
-        }else if(order.status === 'Delivered') {
-            statusColor = "bg-green-200"
-        }else if(order.status === 'Cancelled') {
-            statusColor = "bg-red-200"
+        switch(order.status){
+            case "Shipped":
+                statusColor = "bg-yellow-200";
+                break;
+            case "Delivered":
+                statusColor = "bg-green-200";
+                break;
+            case "Cancelled":
+                statusColor = "bg-red-200";
+                break;
+            default:
+               statusColor = "bg-blue-200";
+               break;
         }
-        else{
-            statusColor = "bg-blue-200"
-        }
+        
         return (
             <tr key={order.id}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{order.orderId}</td>

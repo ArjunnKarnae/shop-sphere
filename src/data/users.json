@@ -1,0 +1,252 @@
+[
+  {
+    "userId": "1",
+    "firstName": "Alice",
+    "lastName": "Walker",
+    "email": "alice.walker@example.com",
+    "phone": "+1-202-555-0111",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "A1",
+        "street": "123 Maple Street",
+        "city": "New York",
+        "state": "NY",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R1",
+        "street": "456 Elm Street",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "2",
+    "firstName": "Bob",
+    "lastName": "Martin",
+    "email": "bob.martin@example.com",
+    "phone": "+1-202-555-0122",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "12B",
+        "street": "456 Oak Avenue",
+        "city": "Chicago",
+        "state": "IL",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R2",
+        "street": "789 Spruce Street",
+        "city": "Evanston",
+        "state": "IL",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "3",
+    "firstName": "Carol",
+    "lastName": "Nguyen",
+    "email": "carol.nguyen@example.com",
+    "phone": "+1-202-555-0133",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "3C",
+        "street": "789 Pine Lane",
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R3",
+        "street": "1012 Sunset Blvd",
+        "city": "Pasadena",
+        "state": "CA",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "4",
+    "firstName": "David",
+    "lastName": "Lee",
+    "email": "david.lee@example.com",
+    "phone": "+1-202-555-0144",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "4D",
+        "street": "321 Birch Blvd",
+        "city": "Houston",
+        "state": "TX",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R4",
+        "street": "800 Lakeview Dr",
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "5",
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "email": "emily.brown@example.com",
+    "phone": "+1-202-555-0155",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "5E",
+        "street": "654 Cedar Court",
+        "city": "Phoenix",
+        "state": "AZ",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R5",
+        "street": "1201 Desert Blvd",
+        "city": "Tempe",
+        "state": "AZ",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "6",
+    "firstName": "Frank",
+    "lastName": "Harris",
+    "email": "frank.harris@example.com",
+    "phone": "+1-202-555-0166",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "6F",
+        "street": "987 Elm Drive",
+        "city": "Philadelphia",
+        "state": "PA",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R6",
+        "street": "202 Market St",
+        "city": "Reading",
+        "state": "PA",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "7",
+    "firstName": "Grace",
+    "lastName": "Kim",
+    "email": "grace.kim@example.com",
+    "phone": "+1-202-555-0177",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "7G",
+        "street": "213 Willow Way",
+        "city": "San Antonio",
+        "state": "TX",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R7",
+        "street": "330 Mission St",
+        "city": "Corpus Christi",
+        "state": "TX",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "8",
+    "firstName": "Henry",
+    "lastName": "Adams",
+    "email": "henry.adams@example.com",
+    "phone": "+1-202-555-0188",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "8H",
+        "street": "456 Poplar Street",
+        "city": "San Diego",
+        "state": "CA",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R8",
+        "street": "404 Pacific Hwy",
+        "city": "Chula Vista",
+        "state": "CA",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "9",
+    "firstName": "Isabella",
+    "lastName": "Lopez",
+    "email": "isabella.lopez@example.com",
+    "phone": "+1-202-555-0199",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "9I",
+        "street": "789 Aspen Circle",
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R9",
+        "street": "305 Elm Fork Dr",
+        "city": "Plano",
+        "state": "TX",
+        "country": "USA"
+      }
+    ]
+  },
+  {
+    "userId": "10",
+    "firstName": "Jack",
+    "lastName": "Wilson",
+    "email": "jack.wilson@example.com",
+    "phone": "+1-202-555-0200",
+    "addresses": [
+      {
+        "type": "shipping",
+        "unitNumber": "10J",
+        "street": "321 Redwood Road",
+        "city": "San Jose",
+        "state": "CA",
+        "country": "USA"
+      },
+      {
+        "type": "residential",
+        "unitNumber": "R10",
+        "street": "1210 Blossom Hill Rd",
+        "city": "Fremont",
+        "state": "CA",
+        "country": "USA"
+      }
+    ]
+  }
+]

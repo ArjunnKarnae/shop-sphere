@@ -3,7 +3,7 @@ import type { FAQ } from "../types/FAQ";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 
-export const FAQAccordionItem = ({item}: {item: FAQ}) : JSX.Element => {
+export const FaqAccordionItem = ({item}: {item: FAQ}) : JSX.Element => {
 
   const [expanded, setExpanded] = useState(false);
     

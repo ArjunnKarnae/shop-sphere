@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom"
-import { Home } from "../Pages/Home";
-import { Cart } from "../Pages/Cart";
-import { Profile } from "../Pages/Profile";
-import { Help } from "../Pages/Help";
+import { Home } from "../Pages/HomePage";
+import { Cart } from "../Pages/CartPage";
+import { Profile } from "../Pages/ProfilePage";
+import { Help } from "../Pages/HelpPage";
 
 
 export const MainSection = () => {
